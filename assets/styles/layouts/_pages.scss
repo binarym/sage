@@ -45,3 +45,58 @@
 		text-transform: uppercase;
 	}
 }
+
+.home-page-content-top{
+	min-height: 200px;
+	width: 100%;
+	background-color: $brand-gray-light;
+}
+
+.relative{
+	position: relative;
+}
+.gray{
+	background-color: $brand-gray-light;
+}
+
+.section-home{
+	min-height: 400px;
+}
+
+.spin-my-head-round{
+	position: absolute;
+	height: auto;
+	width: 350px;
+	top: -100px;
+	left: 15px;
+	&.right{
+		left: auto;
+		right: 15px;
+	}
+	.right-round{
+		position: relative;
+		display: block;
+		height: auto;
+		width: 100%;
+		border-radius: 50%;
+	}
+	.baby.right-round{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		border-radius: 50%;
+		border: 12px solid fade-out($brand-primary, .5);
+	}
+}
+
+.i-walk-the-line{
+	position: absolute;
+	top: -10px;
+	right: 15px;
+	&.left{
+		right: auto;
+		left: 15px;
+	}
+}

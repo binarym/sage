@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="86.291" height="217.998" viewBox="0 0 23.75 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+        filter: url(#gradient-overlay-1);
+        fill-rule: evenodd;
+      }
+    </style>
+
+    <filter id="gradient-overlay-1" filterUnits="userSpaceOnUse">
+      <feImage x="0" y="0" width="23.75" height="60" preserveAspectRatio="none" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjMuNzUiIGhlaWdodD0iNjAiPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxMS44NzUiIHkxPSI0MS44NzUiIHgyPSIxMS44NzUiIHkyPSIxOC4xMjUiPgogIDxzdG9wIG9mZnNldD0iLTAuMjUiIHN0b3AtY29sb3I9IiMwMDcxY2UiLz4KICA8c3RvcCBvZmZzZXQ9IjEuMjUiIHN0b3AtY29sb3I9IiM3NTNiYmQiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIvPjwvc3ZnPg=="/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="SourceGraphic" result="gradientFill"/>
+    </filter>
+  </defs>
+  <path d="M23.692,46.785 L16.941,10.217 L20.651,4.665 C21.268,3.742 21.326,2.562 20.801,1.585 C20.278,0.607 19.261,0.000 18.150,0.000 L6.261,0.000 C5.184,0.000 4.215,0.553 3.669,1.479 C3.123,2.404 3.109,3.518 3.632,4.456 L6.814,10.173 L0.055,46.785 C-0.124,47.755 0.186,48.751 0.886,49.450 L11.165,59.707 C11.361,59.902 11.617,60.000 11.874,60.000 C12.130,60.000 12.386,59.902 12.582,59.707 L22.861,49.450 C23.561,48.751 23.871,47.755 23.692,46.785 ZM5.384,3.486 C5.133,3.035 5.309,2.641 5.397,2.493 C5.484,2.345 5.743,2.000 6.261,2.000 L18.150,2.000 C18.692,2.000 18.949,2.370 19.034,2.528 C19.119,2.687 19.284,3.105 18.984,3.555 L15.346,9.000 L8.454,9.000 L5.384,3.486 ZM21.444,48.036 L11.874,57.586 L2.303,48.037 C2.070,47.803 1.966,47.471 2.026,47.148 L8.699,11.000 L15.048,11.000 L21.721,47.148 C21.781,47.471 21.677,47.803 21.444,48.036 Z" class="cls-1"/>
+</svg>

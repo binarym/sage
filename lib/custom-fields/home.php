@@ -11,14 +11,15 @@
 
 		function home_page_fields(){
 
-			$prefix = '_wahp_';
+			$prefix = '_wahp_slides_';
 
 			$cmb_home = new_cmb2_box( array(
-        'id'            => 'wahp',
-        'title'         => __( 'Home Page Fields', 'cmb2' ),
+        'id'            => 'wahp_slides',
+        'title'         => __( 'Home Page Slides', 'cmb2' ),
         'object_types'  => array( 'page', ), // Post type
         'context'       => 'normal',
         'priority'      => 'high',
+				'show_on' => array( 'key' => 'front-page', 'value' => '' ),
         'show_names'    => true, // Show field names on the left
         // 'cmb_styles' => false, // false to disable the CMB stylesheet
         // 'closed'     => true, // Keep the metabox closed by default
@@ -37,7 +38,6 @@
 		        // 'closed'     => true, // true to have the groups closed by default
 		    ),
 			) );
-
 
 			$cmb_home->add_group_field( $group_field_id, array(
     		'name' => 'Slide Upper Phrase',
@@ -63,6 +63,42 @@
 			$cmb_home->add_group_field( $group_field_id, array(
     		'name' => 'Slide Background Image',
     		'id'   => $prefix . 'bg_image',
+    		'type' => 'file',
+    		// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
+			) );
+
+
+			$prefix = '_wahp_sections_';
+
+			$cmb_home = new_cmb2_box( array(
+        'id'            => 'wahp_sections',
+        'title'         => __( 'Home Page Sections', 'cmb2' ),
+        'object_types'  => array( 'page', ), // Post type
+        'context'       => 'normal',
+        'priority'      => 'high',
+				'show_on' => array( 'key' => 'front-page', 'value' => '' ),
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // Keep the metabox closed by default
+    	) );
+
+			$group_field_id = $cmb_home->add_field( array(
+		    'id'          => $prefix . 'home_page_sections',
+		    'type'        => 'group',
+		    'description' => __( 'Sections', 'cmb2' ),
+		    // 'repeatable'  => false, // use false if you want non-repeatable group
+		    'options'     => array(
+		        'group_title'   => __( 'Section {#}', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
+		        'add_button'    => __( 'Add Another Section', 'cmb2' ),
+		        'remove_button' => __( 'Remove Section', 'cmb2' ),
+		        'sortable'      => true, // beta
+		        // 'closed'     => true, // true to have the groups closed by default
+		    ),
+			) );
+
+			$cmb_home->add_group_field( $group_field_id, array(
+    		'name' => 'Image',
+    		'id'   => $prefix . 'image',
     		'type' => 'file',
     		// 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
 			) );

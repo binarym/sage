@@ -30,10 +30,42 @@ use Roots\Sage\Wrapper;
 				</div>
 			</div>
 		</div>
+		<div class="home-page-content-top">
+		</div>
+		<section class="section-home container relative">
+
+				<div class="spin-my-head-round">
+					<img class="right-round" src="<?php echo get_template_directory_uri(); ?>/assets/images/old-dude.jpg">
+					<div class="baby right-round"></div>
+				</div>
+
+				<div class="i-walk-the-line">
+					<?php echo file_get_contents(get_template_directory_uri() .'/assets/images/dotted-line.svg'); ?>
+				</div>
+
+		</section>
+
+		<section class="section-home gray">
+			<div class="container relative">
+				<div class="i-walk-the-line left">
+					<?php echo file_get_contents(get_template_directory_uri() .'/assets/images/dotted-line.svg'); ?>
+				</div>
+				<div class="spin-my-head-round right">
+					<img class="right-round" src="<?php echo get_template_directory_uri(); ?>/assets/images/old-dude.jpg">
+					<div class="baby right-round"></div>
+				</div>
+			</div>
+		</section>
+
     <div class="wrap container" role="document">
       <div class="content row">
         <main class="main">
-          <?php include Wrapper\template_path(); ?>
+
+
+
+
+
+
         </main><!-- /.main -->
         <?php if (Setup\display_sidebar()) : ?>
           <aside class="sidebar">
